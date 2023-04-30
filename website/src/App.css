@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  padding: 5vh;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow-x: hidden ;
+}
+
+.me-auto{
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+}
+
+.hero{
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.main-back{
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: url("./images/gradient.jpg") center bottom no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.child-hero{
+  display: grid;
+  gap: 40px;
+}
+
+.card{
+  border: none !important;
+  border-radius: 20px !important;
+}
+
+.card-left{
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.card-right{
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.card-img-top{
+  border-radius: 20px 20px 0px 0px !important;
+  height: 10rem !important;
+}
+
+.fileDrop{
+  max-width: 300px;
+  font-size: 2vh;
+  background-color: black;
+  padding: 1rem;
+  align-items: center;
+}
+
+.cardsCont{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("./fonts/MADE Outer Sans Bold PERSONAL USE.otf");
+}
+
+
+@media (max-width: 1000px) {
+  .child-hero{
+    justify-content: center;
+  }
+
+  .text-desc{
+    text-align: center;
+  }
+
+  .img-cont{
+    justify-content: center;
+  }
+  .hero{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+  .card-left{
+    grid-template-columns: 1fr;
+  }
+  .card-right{
+    grid-template-columns: 1fr;
+  }
+}
